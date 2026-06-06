@@ -43,7 +43,7 @@ article {
 }
 
 .img {
-  background: url(../../product-preview-card-component-main/images/image-product-mobile.jpg) no-repeat center / cover;
+  background: url(../images/image-product-mobile.jpg) no-repeat center / cover;
   aspect-ratio: 1/1;
 }
 

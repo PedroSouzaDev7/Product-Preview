@@ -6,7 +6,7 @@
     }
 
     .img {
-        background: url(../../product-preview-card-component-main/images/image-product-desktop.jpg) no-repeat center / cover;
+        background: url(../images/image-product-desktop.jpg) no-repeat center / cover;
         width: 50%;
         aspect-ratio: unset;
     }
