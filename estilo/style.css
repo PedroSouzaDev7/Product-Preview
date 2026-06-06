@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* Font Preço */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap'); 
+/* Font all */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green500: hsl(158, 36%, 37%);
+    --green700: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --gray: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--cream);
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 40px);
+}
+
+article {
+    max-width: 375px;
+    background-color: var(--White);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: max-width .3s ease;
+}
+
+.img {
+  background: url(../../product-preview-card-component-main/images/image-product-mobile.jpg) no-repeat center / cover;
+  aspect-ratio: 1/1;
+}
+
+
+.contenPrinci {
+    padding: 30px;
+}
+
+.perfm {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--gray);
+}
+
+.cont h1 {
+    line-height: 1em;
+    font-family: "Fraunces";
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.textPrinc {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+.prices > .pricePrinc {
+    font-family:"Fraunces",serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-right: 20px;
+    color: var(--green500);
+}
+
+del {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.buttonPai {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    background-color: var(--green500);
+    color: var(--White);
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: transform .5s, background-color .2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    background-color: var(--green700);
+}
+
+button > i {
+    margin-right: 10px;
+    font-size: 17px;
+}
